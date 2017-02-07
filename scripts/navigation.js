@@ -2,15 +2,28 @@ var $topMenu = $('.static-menu');
 var $leftMenu = $('.sliding-menu');
 var $menuClose = $('.menu-close');
 var $menuHamburger = $('.menu-hamburger');
+var $menuLabel = $('.sliding-menu label');
+var $currentLabel;
 
+function closeSlideNavigation(){
+  $topMenu.css({'top':'0'});
+  $leftMenu.css({'left':'-500px'});
+  $menuLabel.css({'opacity': '0'});
+}
+
+$(document).on('change', function(){
+  $currentLabel =  $('input[name=slide]:checked').val();
+  $('#menu-pointer').html($currentLabel)
+  }
+)
 
 $menuHamburger.on('click', function(){
-  console.log('menu');
   $topMenu.css({'top':'-100px'});
   $leftMenu.css({'left':'0'});
+  $menuLabel.css({'opacity':'0.9'})
 });
 
-$menuClose.on('click',function(){
-  $topMenu.css({'top':'0'});
-  $leftMenu.css({'left':'-500px'})
-})
+$menuClose.on('click',closeSlideNavigation)
+
+$menuLabel.on('click', closeSlideNavigation)
+

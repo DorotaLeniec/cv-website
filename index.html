@@ -25,25 +25,35 @@
   <div class="sliding-menu col-xs-2">
     <div class="menu-close">
     </div>
+    <label for="slide-0-trigger" >Main</label>
     <label for="slide-1-trigger">About me</label>
     <label for="slide-2-trigger">Skills</label>
     <label for="slide-3-trigger">Projects</label>
     <label for="slide-4-trigger">Contact</label>
   </div>
-
-  <input type="radio" id="slide-1-trigger" name="slide" checked>
+  <input type="radio" id="slide-0-trigger" name="slide" value="Main" checked>
   <section class="slide slide-one">
-    <h1>Header 1</h1>
+    <h1>Main</h1>
+    <div class="col-xs-offset-4 col-xs-4">
+    </div>
   </section>
-  <input type="radio" id="slide-2-trigger" name="slide">
+
+  <input type="radio" id="slide-1-trigger" name="slide" value="About me">
+  <section class="slide slide-one">
+    <h1>About me</h1>
+    <div class="col-xs-offset-4 col-xs-4">
+      Text Bsdksdfhsdkhds
+    </div>
+  </section>
+  <input type="radio" id="slide-2-trigger" name="slide" value="Skills">
   <section class="slide slide-two">
     <h1>Header 2</h1>
   </section>
-  <input type="radio" id="slide-3-trigger" name="slide">
+  <input type="radio" id="slide-3-trigger" name="slide" value="Projects">
   <section class="slide slide-three">
     <h1>Header 3</h1>
   </section>
-  <input type="radio" id="slide-4-trigger" name="slide" >
+  <input type="radio" id="slide-4-trigger" name="slide" value="Contact" >
   <section class="slide slide-four">
     <h1>Header 4</h1>
   </section>
