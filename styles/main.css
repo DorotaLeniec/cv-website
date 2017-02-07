@@ -127,3 +127,59 @@ body {
 #slide-1-trigger,#slide-2-trigger,#slide-3-trigger, #slide-4-trigger, #slide-0-trigger {
   display: none;
 }
+
+.intro-card {
+position: absolute;
+  top:50%;
+  text-align: right;
+  /*background-color: rgba(0,0,0,0.65);*/
+  padding:80px  0 0 80px;
+  border: solid 15px #000;
+  color:#000;
+}
+.intro-text {
+  font-family: 'Karla', sans-serif;
+  font-weight: bold;
+  font-size: 50px;
+}
+.intro-name {
+  font-size: 100px;
+}
+
+@media screen and (max-width: 1540px){
+  .intro-name {
+    font-size: 60px;
+  }
+  .intro-text {
+    font-size: 30px;
+  }
+}
+
+@media screen and (max-width: 860px){
+  .intro-card {
+    padding-left:20px;
+  }
+  .intro-name {
+    font-size: 40px;
+  }
+  .intro-text {
+    font-size: 15px;
+  }
+}
+
+@media screen and (max-width: 640px){
+  .intro-card {
+    padding-left:20px;
+  }
+  .intro-name {
+    font-size: 30px;
+  }
+  .intro-text {
+    font-size: 10px;
+  }
+}
+@media screen and (max-width: 530px) {
+  .sliding-menu {
+    width: 100%;
+  }
+}
