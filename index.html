@@ -1,0 +1,55 @@
+<!Doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://fonts.googleapis.com/css?family=Limelight|Mate+SC|Megrim" rel="stylesheet">
+  <link rel="stylesheet" href="./node_modules/font-awesome/css/font-awesome.min.css">
+  <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap-theme.min.css">
+  <link rel="stylesheet" href="./node_modules/normalize.css/normalize.css">
+  <link rel="stylesheet" href="styles/main.css">
+  <title>
+    DL-portfolio
+  </title>
+</head>
+<body>
+
+
+<div class="container-fluid" id="main-page">
+<div class="static-menu">
+  <div class="menu-hamburger">
+    <div id="menu-pointer">Main</div>
+  </div>
+</div>
+  <div class="sliding-menu col-xs-2">
+    <div class="menu-close">
+    </div>
+    <label for="slide-1-trigger">About me</label>
+    <label for="slide-2-trigger">Skills</label>
+    <label for="slide-3-trigger">Projects</label>
+    <label for="slide-4-trigger">Contact</label>
+  </div>
+
+  <input type="radio" id="slide-1-trigger" name="slide" checked>
+  <section class="slide slide-one">
+    <h1>Header 1</h1>
+  </section>
+  <input type="radio" id="slide-2-trigger" name="slide">
+  <section class="slide slide-two">
+    <h1>Header 2</h1>
+  </section>
+  <input type="radio" id="slide-3-trigger" name="slide">
+  <section class="slide slide-three">
+    <h1>Header 3</h1>
+  </section>
+  <input type="radio" id="slide-4-trigger" name="slide" >
+  <section class="slide slide-four">
+    <h1>Header 4</h1>
+  </section>
+</div>
+<script src="./node_modules/jquery/dist/jquery.min.js"></script>
+<script src="./node_modules/bootstrap/dist/js/bootstrap.js"></script>
+<script src="scripts/navigation.js"></script>
+</body>
+</html>
