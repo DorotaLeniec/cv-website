@@ -3,6 +3,9 @@ body {
   width: 100%;
   height: 100vh;
   overflow: hidden;
+  background-image: url("http://i.imgur.com/tx8TIYK.png");
+  background-size: cover;
+  background-position: top;
 }
 
 #main-page {
@@ -51,7 +54,7 @@ body {
   background-color: black;
 }
 .sliding-menu {
-  left:-500px;
+  left:-1000px;
   color:#fff;
   padding-top:150px;
   position: fixed;
@@ -78,17 +81,20 @@ body {
   width: 100%;
   height: 100%;
   position: absolute;
-  top:83px;
+  top:0px;
   left: 100%;
   z-index: 10;
   padding: 8em 1em 0;
-  background-color: #fff;
+  background-color: 	rgba(255,255,255,0.6);
 }
 
 [id^='slide']:checked + .slide {
   z-index:100;
   left: 0;
   text-align: center;
+}
+[id^='slide']:checked + .slide h1 {
+  color:#fff;
 }
 .menu-close {
   top:40px;

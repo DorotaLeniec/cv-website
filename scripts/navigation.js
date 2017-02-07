@@ -7,7 +7,7 @@ var $currentLabel;
 
 function closeSlideNavigation(){
   $topMenu.css({'top':'0'});
-  $leftMenu.css({'left':'-500px'});
+  $leftMenu.css({'left':'-1000px'});
   $menuLabel.css({'opacity': '0'});
 }
 
