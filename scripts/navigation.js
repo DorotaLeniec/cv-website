@@ -4,7 +4,8 @@ var $menuClose = $('.menu-close');
 var $menuHamburger = $('.menu-hamburger');
 var $menuLabel = $('.sliding-menu label');
 var $currentLabel;
-var $letter = $('.name-letter')
+var $letter = $('.name-letter');
+var $bounceLetter = $('.name-letter.bounce-letter');
 
 function closeSlideNavigation() {
   $topMenu.css({'top': '0'});
@@ -32,6 +33,14 @@ $letter.mouseenter(function () {
   $(this).addClass('animated rubberBand');
   $(this).one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function () {
     $(this).removeClass('animated rubberBand')
+  });
+});
+
+$(document).on('click',function(){
+  console.log('lololo')
+  $bounceLetter.addClass('animated rubberBand');
+  $bounceLetter.one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function () {
+    $bounceLetter.removeClass('animated rubberBand')
   });
 })
 
