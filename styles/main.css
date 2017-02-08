@@ -144,42 +144,85 @@ position: absolute;
 }
 .intro-name {
   font-size: 100px;
+  letter-spacing: -7px;
+}
+.name-letter {
+  display: inline-block;
+  margin: 0;
 }
 
+
 @media screen and (max-width: 1540px){
+  .intro-name {
+    font-size: 80px;
+    letter-spacing: -5px;
+  }
+  .intro-text {
+    font-size: 40px;
+  }
+}
+
+
+@media screen and (max-width: 1240px){
+  .intro-name {
+    font-size: 70px;
+    letter-spacing: -5px;
+  }
+  .intro-text {
+    font-size: 40px;
+  }
+}
+
+@media screen and (max-width: 1080px){
+  .intro-name {
+    font-size: 60px;
+    letter-spacing: -5px;
+  }
+  .intro-text {
+    font-size: 30px;
+  }
+}
+
+@media screen and (max-width: 930px){
+  .intro-card {
+    padding-left:10px;
+  }
   .intro-name {
     font-size: 60px;
   }
   .intro-text {
     font-size: 30px;
   }
-}
 
+}
 @media screen and (max-width: 860px){
-  .intro-card {
-    padding-left:20px;
-  }
   .intro-name {
     font-size: 40px;
+  }
+  .intro-text {
+    font-size: 25px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .sliding-menu {
+    width: 100%;
+  }
+  .intro-name {
+    font-size: 30px;
   }
   .intro-text {
     font-size: 15px;
   }
 }
 
-@media screen and (max-width: 640px){
-  .intro-card {
-    padding-left:20px;
-  }
+@media screen and (max-width: 340px) {
   .intro-name {
-    font-size: 30px;
+    font-size: 20px;
+    letter-spacing: -3px;
   }
   .intro-text {
-    font-size: 10px;
+    font-size: 15px;
   }
 }
-@media screen and (max-width: 530px) {
-  .sliding-menu {
-    width: 100%;
-  }
-}
+
