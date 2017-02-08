@@ -9,6 +9,7 @@ var $bounceLetter = $('.name-letter.bounce-letter');
 
 function closeSlideNavigation() {
   $topMenu.css({'top': '0'});
+  $topMenu.addClass('slideDown')
   $leftMenu.css({'left': '-1000px'});
   $menuLabel.css({'opacity': '0'});
 }
@@ -20,6 +21,7 @@ $(document).on('change', function () {
 )
 
 $menuHamburger.on('click', function () {
+  $topMenu.removeClass('slideDown')
   $topMenu.css({'top': '-100px'});
   $leftMenu.css({'left': '0'});
   $menuLabel.css({'opacity': '0.9'})

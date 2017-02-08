@@ -8,6 +8,7 @@ body {
   background-position: top;
 }
 
+
 #main-page {
   padding: 0;
   margin: 0;
@@ -25,7 +26,9 @@ body {
   height: 80px;
   box-shadow: 0 2px 4px 0 rgba(0,0,0,0.15);
   transition: top 0.7s ease-in-out;
-
+}
+.static-menu.slideDown {
+  transition: top 0.7s cubic-bezier(0, 0, 0.17, 1.53) 1.5s;
 }
 .menu-hamburger {
   cursor: pointer;
@@ -37,6 +40,7 @@ body {
   border-bottom:solid black 1px;
 }
 #menu-pointer {
+  color: #3fa9f5;
   width:90px;
   pointer-events: none;
   margin-top:-6px;
@@ -81,20 +85,22 @@ body {
   width: 100%;
   height: 100%;
   position: absolute;
-  top:0px;
+  top:100%;
   left: 100%;
   z-index: 10;
   padding: 8em 1em 0;
+  text-align: center;
   background-color: 	rgba(255,255,255,0.6);
+  transition: left 0.5s ease-in-out 0.3s , top .2s ease 1s;
 }
 
 [id^='slide']:checked + .slide {
-  z-index:100;
+  z-index: 100;
+  opacity: 1;
   left: 0;
+  top: 0;
   text-align: center;
-}
-[id^='slide']:checked + .slide h1 {
-  color:#fff;
+  transition: top .7s cubic-bezier(0.69,-0.07, 0, 1.43) 0.9s;
 }
 .menu-close {
   top:40px;
